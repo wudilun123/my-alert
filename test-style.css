@@ -13,20 +13,15 @@
     border: 1px solid rgba(0,0,0,0.2);
     border-radius: 10px;    
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 100px;
-    margin: auto;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
     background-color: white;
     box-shadow: 5px 5px 10px rgba(0,0,0,0.7);
 }
-#text-container{
-    display: flex;
-        width: 100%;
-        height: 80%;
-        justify-content: center;
-        align-items: center;
+#close-button-container{
+    width: 100%;
+    height: 16%;
 }
 #close-button{
     position: absolute;
@@ -35,14 +30,28 @@
     cursor: pointer;
     color:rgb(0,0,0);
 }
-#alert-text{
-    width: 350px;
-    font-size: 18px;
+#text-container{
+    display: flex;
+    width: 100%;
+    height: 65%;
+    justify-content: center;
+    align-items: center;
     overflow: hidden;
-    word-break:break-all; 
+}
+
+#alert-text{
+    width: 100%;
+    font-size: 18px;
     cursor: default;
     text-align: center;
-    white-space: pre;
+    word-wrap: break-word;
+}
+#confirm-button-container{
+    width: 100%;
+    height: 19%;
+    display: flex;
+    justify-self:center;
+    align-items: flex-start;
 }
 #confirm-button{
     width: 70px;
